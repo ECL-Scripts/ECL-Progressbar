@@ -1,10 +1,53 @@
-# Exports
+# ECL-Progressbar
 
----
+Modern and minimal progressbar system for FiveM built with smooth animations, optimized performance and premium UI design.
 
-# Start Progressbar
+━━━━━━━━━━━━━━━━━━━━━━
 
+## Features
+
+• Modern dark UI
+• Smooth animations
+• Cancel support
+• Customizable colors
+• Animation integration
+• Disable controls support
+• Optimized performance
+• Lightweight design
+• Standalone support
+• Clean ecosystem styling
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+## Compatibility
+
+• Standalone
+• ESX
+• QBCore
+• ox_core
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+## Preview
+<img width="1672" height="941" alt="ECL-Progressbar" src="https://github.com/user-attachments/assets/6c45d560-f6b6-421c-8d1e-7ac1f42cc977" />
+
+Preview video coming soon.
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+## Installation
+
+Add the resource to your `resources` folder and ensure it in your `server.cfg`.
+
+```cfg id="jlwmek"
+ensure ECL-Progressbar
 ```
+
+━━━━━━━━━━━━━━━━━━━━━━
+
+## Export Example
+
+```lua id="jlwmel"
 exports['ECL-Progressbar']:Start({
 
     label = 'Repairing vehicle...',
@@ -32,84 +75,27 @@ exports['ECL-Progressbar']:Start({
 }, function(cancelled)
 
     if cancelled then
+
+        print('Cancelled')
+
         return
     end
+
+    print('Completed')
+
 end)
-
 ```
 
----
+━━━━━━━━━━━━━━━━━━━━━━
 
-# Parameters
+## Discord
 
-| Parameter | Type    | Description                     |
-|-----------|---------|---------------------------------|
-| label     | string  | Progressbar text                |
-| duration  | number  | Duration in milliseconds        |
-| disable   | table   | Disable player controls         |
-| anim      | table   | Play animation                  |
-| scenario  | string  | Play scenario                   |
+https://discord.gg/tBkbfATVrz
 
----
+━━━━━━━━━━━━━━━━━━━━━━
 
-# Disable Controls
+## Credits
 
-```
-disable = {
+Developed by ECL Scripts.
 
-    move = true,
-
-    combat = true,
-
-    vehicle = true
-}
-
-```
-| Control | Description              |
-|---------|--------------------------|
-| move    | Disable movement         |
-| combat  | Disable combat/shooting  |
-| vehicle | Disable entering vehicle |
-
----
-
-# Example
-
-```
-exports['ECL-Progressbar']:Start({
-
-    label = 'Repairing vehicle...',
-
-    duration = 5000,
-
-    disable = {
-
-        move = true,
-
-        combat = true,
-
-        vehicle = true
-    },
-
-    anim = {
-
-        dict = 'mini@repair',
-
-        clip = 'fixing_a_ped'
-    }
-})
-```
-
----
-
-# Installation
-
-Add this to your server.cfg
-
-```cfg
-ensure ECL-Progress
-```
-
----
-
-# Created by Eclipse Scripts
+Premium FiveM Development
