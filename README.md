@@ -31,7 +31,7 @@ Modern and minimal progressbar system for FiveM built with smooth animations, op
 ## Preview
 <img width="1672" height="941" alt="ECL-Progressbar" src="https://github.com/user-attachments/assets/6c45d560-f6b6-421c-8d1e-7ac1f42cc977" />
 
-Preview video coming soon.
+https://www.youtube.com/watch?v=BvKpAlcdnm0
 
 ━━━━━━━━━━━━━━━━━━━━━━
 
